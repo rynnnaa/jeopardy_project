@@ -1,0 +1,15 @@
+
+[1mFrom:[0m /mnt/c/Users/Ryna/dev/flatiron/labs/jeopardy/lib/jeopardy/api.rb:7 :
+
+     [1;34m2[0m:   [32mdef[0m [1;36mself[0m.[1;34mget_questions[0m
+     [1;34m3[0m:     response = [1;34;4mHTTParty[0m.get([31m[1;31m'[0m[31mhttp://jservice.io/api/clues[1;31m'[0m[31m[0m)
+     [1;34m4[0m: 
+     [1;34m5[0m:   [36m@@all_questions[0m = response.map {|hash| hash[[31m[1;31m'[0m[31mquestion[1;31m'[0m[31m[0m]}
+     [1;34m6[0m:   [32mend[0m
+ =>  [1;34m7[0m:   binding.pry
+     [1;34m8[0m: 
+     [1;34m9[0m:   [1;34m# def self.get_answers[0m
+    [1;34m10[0m:   [1;34m# response.map do |hash| [0m
+    [1;34m11[0m:   [1;34m#   Jeopardy_class.new(hash['question'], hash['id'], hash['answer'])[0m
+    [1;34m12[0m:   [1;34m#   binding.pry[0m
+

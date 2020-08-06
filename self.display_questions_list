@@ -1,0 +1,13 @@
+
+[1mFrom:[0m /mnt/c/Users/Ryna/dev/flatiron/labs/jeopardy/lib/jeopardy/cli.rb:7 CLI#start:
+
+     [1;34m3[0m: [32mdef[0m [1;34mstart[0m
+     [1;34m4[0m:   [1;36mself[0m.welcome
+     [1;34m5[0m:   [1;36mself[0m.get_questions_list
+     [1;34m6[0m:   [1;36mself[0m.display_questions_list
+ =>  [1;34m7[0m:   binding.pry
+     [1;34m8[0m:   [1;34m# self.play[0m
+     [1;34m9[0m:   [1;34m# self.display_questions[0m
+    [1;34m10[0m:   [1;34m# self.sign_off[0m
+    [1;34m11[0m: [32mend[0m
+
