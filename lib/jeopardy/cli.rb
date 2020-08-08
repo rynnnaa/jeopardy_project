@@ -11,12 +11,13 @@ class CLI
     puts "********************Are you ready to get started?*************************"
     sleep(1)
     puts "****************************Let's Practice!*************************"
+    sleep(2)
   end
 
   def main_menu
     input = nil
     while input != "exit"
-      puts "Type the word question for jeopardy questions. Type the word random to study a random question, or type exit to end"
+      puts "Type the word question to learn more on jeopardy questions. Type the word random to study a random question, or type exit to end"
       puts "-------------------------------------------------------------------------"
       input = gets.strip.downcase
       if input == "random"
