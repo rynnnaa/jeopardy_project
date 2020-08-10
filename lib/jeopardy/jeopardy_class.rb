@@ -1,7 +1,6 @@
 class Jeopardy_class
 
   @@all = []
-
   attr_accessor :id, :answer, :question, :value, :title, :random_question, :airdate
 
 

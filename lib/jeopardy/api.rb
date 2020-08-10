@@ -6,6 +6,7 @@ class API
     end
   end
 
+  
   def self.get_random
     response = HTTParty.get('http://jservice.io/api/random')
     response.map do |hash|

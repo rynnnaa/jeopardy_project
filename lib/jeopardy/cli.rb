@@ -1,8 +1,8 @@
 class CLI
 
   def start
-    self.welcome
-    self.main_menu
+    welcome
+    main_menu
   end
 
   def welcome
@@ -56,8 +56,12 @@ class CLI
   def display_random_question
     puts "***************************You have chosen a random question***************************"
     API.get_random
-    Jeopardy_class.all.each.with_index(1) do |obj, index|
-      puts "#{index}: #{obj.question}"
+    Jeopardy_class.all.each do |obj|
+      puts "Question: #{obj.question}"
+      puts "Answer: #{obj.answer}"
+      puts "Title: #{obj.title}"
+      puts "Air date: #{obj.airdate}"
+      puts "-----------------------------------------------------------------------------------------"
     end
   end
 
