@@ -13,8 +13,13 @@ class Jeopardy_class
     save
   end
 
+
   def self.all
     @@all
+  end
+
+  def self.find(id)
+    @@all[id.to_i-1]
   end
 
   def save
