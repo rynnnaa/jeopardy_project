@@ -36,13 +36,14 @@ class CLI
 
 
   def display_question_info
-    puts "Please enter a number from 1-200 to pick a specific question you'd like to learn more about."
+    puts "Please enter a number from 1-100 to pick a specific question you'd like to learn more about."
     input = gets.to_i
+    @jeopardy = Jeopardy_class.all[input-1]
     
-    puts "You have chosen the question: #{Jeopardy_class.all[input.to_i-1].question}"
-    puts "Answer: #{Jeopardy_class.all[input.to_i-1].answer}"
-    puts "Title: #{Jeopardy_class.all[input.to_i-1].title}"
-    puts "Airdate: #{Jeopardy_class.all[input.to_i-1].airdate}"
+    puts "You have chosen the question: " + @jeopardy.question
+    puts "Answer: " + @jeopardy.answer
+    puts "Title: " + @jeopardy.title.to_s
+    puts "Airdate:  " + @jeopardy.airdate
     puts "--------------------------------------------------------------------------------------"
   end
 
